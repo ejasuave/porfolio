@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/33ebe243e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+   <div id="header">
+    <div class="container">
+     <nav>
+        <img src="Images/Logo.png" alt="Logo" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+     </nav>
+     <div class="header-text">
+        <p>Web developer and designer</p>
+        <h1>Hi, I am <span>Eni</span><br>Agunbiade from London</h1>
+        </div>
+    </div>
+   </div>
+   <!--about section-->
+   <div id="about">
+    <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+                <img src="Images/background.jpg" alt="About Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-desc">Hi, I'm a web developer with a passion for creating clean, responsive, and engaging websites. I specialize in transforming ideas into functional web experiences that help individuals and businesses connect with their audience online</p>
+            
+                <p class="about-desc,l">From designing intuitive user interfaces to developing interactive web applications, I enjoy every step of the development process. My goal is to deliver websites that are visually appealing, easy to use, and optimized for performance across all devices</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="openTab('skills', event, this)">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience', event, this)">Experience</p>
+                    <p class="tab-links" onclick="openTab('education', event, this)">Education</p>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Frontend Skills</span><br>Designing web interfaces<br>HTML5<br>CSS3<br>JavaScript<br>Responsive Design</li>
+                        <li><span>Backend</span><br>Node.js<br>Express.js<br>MongoDB</li>
+                        <li><span>Tools</span><br>Git&Github<br>VS Code<br>Figma</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-current</span><br>Built a responsive survey form for a small business.<br>Collected and organized customer data efficiently.<br>Implemented form validation and a user-friendly design.</li>
+                        </ul>   
+                </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>01founders</li>
+                        <li><span>2025</span><br>FreeCodeCamp</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--services section-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1> 
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-code fa-3x"></i>
+                <h2>Web Design</h2>  
+                <p>Creating modern, responsive, and user-friendly website designs that combine aesthetics with functionality to deliver an engaging user experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div> 
+                <i class="fa-solid fa-crop fa-3x"></i>
+                <h2>Web Development</h2>  
+                <p>Building fast, secure, and scalable websites using modern technologies, ensuring seamless performance across all devices and browsers.</p>
+                <a href="#">Learn More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!--portfolio section-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="Images/form-image.png" alt="Portfolio Image">
+                <div class="layer">
+                    <div class="layer-content">
+                    <h3 class="work-h3">Survey Form</h3>
+                    <p class="work-p">The survey form collects data on customer preferences</p>
+                    <div class="layer-links">
+                    <a href="https://ejasuave.github.io/survey-form/" target="_blank" title="View Live Demo" class="btn-demo"><i class="fa-solid fa-link"></i></a>
+                     <a href="https://github.com/ejasuave/survey-form" target="_blank" title="View Source Code"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="Images/portfolio1.png" alt="Portfolio Image">
+                <div class="layer">
+                    <div class="layer-content">
+                <h3 class="work-h3">Project 2</h3>
+                <p class="work-p">Lorem ipsum dolor sit amet consectetur </p>
+                <div class="layer-links">
+                    <a href="#" target="_blank" ><i class="fa-solid fa-link"></i></a>
+                </div>
+                </div>
+                </div>
+                </div>
+            
+            
+            <div class="work">
+                <img src="images/portfolio3.avif" alt="Portfolio Image">
+                <div class="layer">
+                    <div class="layer-content">
+                <h3 class="work-h3">Project 3</h3>
+                <p class="work-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate! Doloribus, voluptate.</p>
+                <div class="layer-links">
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+       <a href="#" class="btn">View More</a>
+    </div>
+
+    <!--contact section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="email-align"><a class="email" href="mailto:eniagunbiade84@gmail.com"><i class="fa-solid fa-at"></i> eniaguniade84@gmail.com</a></p>
+                    <p><a class="whatsapp"  href="https://wa.me/447711084109?text=Hey%20I%20saw%20your%20site%20and%20I%20have%20a%20few%20questions" target="_blank"> <i class="fa-brands fa-whatsapp"></i> Chat with me</a></p>
+                    <p><a class="mobile" href="tel:07711084109"><i class="fa-solid fa-phone"></i> 0771108409</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Eni-CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Eni Agunbiade. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
